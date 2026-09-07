@@ -1,0 +1,26 @@
+.upSidebare
+{
+    display: grid;
+    padding: 0px;
+    grid-template-areas: 
+    "recept table aboutme regist";
+    background-color: #211e1e ;
+
+}
+
+.upSidebare a
+{
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+    color: white;
+    text-decoration: none; /*в данном случае убрать нижнее подчеркивание у ссылки*/
+    font-size: 17px;
+    padding: 14px 16px;
+    text-align: center; /*текст по центру*/
+
+}
+.upSidebare a:hover 
+{
+    background-color: green;
+}
+    
