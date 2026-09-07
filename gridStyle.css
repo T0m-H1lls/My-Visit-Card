@@ -1,0 +1,41 @@
+.grid{
+    display: grid;
+    /*grid-template-columns:1fr minmax(250px, 2fr) 1fr; repeat(3,200px);*/ /* 3 колонки по 200px*/
+    /*grid-template-rows: repeat(2,100px);  2 строки по 100px (Получается сетка 2×3 (3 колонки, 2 строки) — 6 ячеек.)*/
+    /*grid-template-columns: repeat(5,1fr);*/
+    /*grid-template-columns: minmax(200px, 1fr) 100px;  */
+    
+    
+    grid-template-rows: repeat(3,100px);
+    grid-template-columns: repeat(2,100px);
+    /*gap: 120px;          /*  пасстояние и между рядами, и между колонками */
+    /*row-gap: 40px;       /*  расстояние между строками (row)              */
+    /*column-gap: 10px;    /*  расстояние между колонками                   */
+
+    /*gap — расстояние между элементами. Для отступа от краёв используем padding на контейнере*/
+    
+}
+
+.upSidebare
+{
+    padding: 0px;
+    display: grid;
+    grid-template-areas:
+        "header nav main footer"; /* Пустая ячейка — точка ..*/
+    
+}
+figure
+{
+    border-left: 1px solid red;
+    border-right: 1px solid red;
+    background-color: wheat;
+    margin: 0px 0px 20px 0px;
+    padding: 12px 5px;
+    box-sizing: border-box;
+}
+.page-header { grid-area: header; justify-self: center;  align-self: center;} /* отцентрировать элемент в своей ячейке */
+.page-nav    { grid-area: nav; justify-self: center;}
+.page-main   { grid-area: main; justify-self: center;}
+.page-footer { grid-area: footer; justify-self: center;}
+
+
